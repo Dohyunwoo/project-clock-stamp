@@ -1,5 +1,6 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<button {{action "listpush"}}>{{model}}</button>
+<ul>
+  {{#each tl as |t|}}
+    <li>{{t}}</li>
+  {{/each}}
+</ul>
