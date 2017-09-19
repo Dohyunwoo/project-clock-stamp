@@ -7,6 +7,9 @@ export default Ember.Route.extend({
       let wd = this.currentModel;
       this.get('tl').pushObject(wd);
       this.refresh();
+    },
+    listdelete(time){
+      this.get('tl').removeObject(time);
     }
   },
   model(){

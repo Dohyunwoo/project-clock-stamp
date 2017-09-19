@@ -1,6 +1,6 @@
 <button {{action "listpush"}}>{{model}}</button>
 <ul>
   {{#each tl as |t|}}
-    <li>{{t}}</li>
+    <li>{{t}}<button {{action "listdelete" t}}>X</button></li>
   {{/each}}
 </ul>
